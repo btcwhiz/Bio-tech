@@ -1,0 +1,37 @@
+@font-face {
+  font-family: DM Sans;
+  src: url(../fonts/DMSans-Regular.ttf);
+}
+
+:root {
+  --font-family: DM Sans;
+  --white: #ffffff;
+  --primary-color: #0c1e3c;
+  --inactive-background: rgba(54, 131, 252, 0.1);
+  --active-background: #3683fc;
+  --hide-color: #909ba6;
+  --revoke-color: #fc5a5a;
+
+  /* fonts */
+  --font-weight-5: 500;
+
+  /* pic */
+  --size-1: 8px;
+  --size-2: 16px;
+  --size-3: 24px;
+  --size-4: 32px;
+  --size-5: 40px;
+  --size-6: 48px;
+  --size-7: 56px;
+  --size-8: 64px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+.flex {
+  display: flex;
+}

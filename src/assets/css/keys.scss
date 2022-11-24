@@ -1,0 +1,140 @@
+.Keys {
+  &__title {
+    font-weight: var(--font-weight-5);
+    font-size: var(--size-6);
+    margin-bottom: var(--size-8);
+  }
+
+  &__main {
+    justify-content: space-between;
+
+    &__left {
+      width: 30%;
+    }
+
+    &__right {
+      width: 60%;
+      padding: var(--size-4);
+    }
+  }
+
+  &__item {
+    margin-bottom: var(--size-5);
+
+    &__detail {
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--size-2);
+    }
+
+    &__bottom {
+      width: 90%;
+      justify-content: space-between;
+      &__revoke {
+        font-weight: var(--font-weight-5);
+        font-size: 20px;
+        color: var(--revoke-color);
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+      }
+      &__statistics {
+        font-weight: var(--font-weight-5);
+        font-size: 20px;
+        color: var(--active-background);
+      }
+    }
+  }
+
+  &__keyarea {
+    width: 80%;
+    height: var(--size-6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 var(--size-2);
+    gap: 10px;
+    background: var(--inactive-background);
+    border-radius: var(--size-1);
+
+    input {
+      color: #909ba6;
+      font-weight: var(--font-weight-5);
+      font-size: var(--size-3);
+      text-transform: capitalize;
+      border: none;
+      background: transparent;
+      width: 100%;
+      height: var(--size-4);
+      font-weight: var(--font-weight-5);
+      font-size: var(--size-3);
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+
+  &__new__bottom {
+    margin-top: var(--size-8);
+    justify-content: center;
+  }
+
+  &__newKey {
+    width: 200px;
+    height: var(--size-5);
+    background: #3683fc;
+    border-radius: 140px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__show {
+    cursor: pointer;
+  }
+
+  &__copy {
+    cursor: pointer;
+  }
+
+  &__desc {
+    padding: 24px 36px 36px;
+    gap: 35px;
+
+    width: 100%;
+    background: rgba(54, 131, 252, 0.1);
+    border-radius: 18px;
+
+    h3 {
+      font-weight: var(--font-weight-5);
+      font-size: var(--size-4);
+    }
+
+    &__middle {
+      margin: var(--size-4) 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Keys {
+    &__main {
+      flex-direction: column;
+      &__left {
+        width: 100%;
+      }
+      &__right {
+        width: 100%;
+      }
+    }
+    &__desc {
+      width: auto;
+    }
+  }
+}
